@@ -1,1 +1,165 @@
+/* Global
+================================ */
 
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+.grid-container {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+img {
+	width: 100%;
+}
+
+/* Media Queries
+================================ */
+
+@media (min-width: 1px) and (max-width: 767px)  {
+	.grid-container > [class^="grid-"] {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.hide-mobile {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) {
+
+	/* Columns
+	================================ */
+
+	.grid-container > [class^="grid-"] {
+		float: left;
+		min-height: 1px;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-left: 2%;
+	}
+	.grid-container > [class^="grid-"]:first-child {
+		margin-left: 0;
+	}
+	.grid-container > [class^="grid-"]:last-child {
+		float: right;
+	}
+
+	/* Columns are 65px wide, with 20px gutters
+	=========================================== */
+
+	.grid-1 {
+		width: 6.5%;
+	}
+	.grid-2 {
+		width: 15%;
+	}
+	.grid-3 {
+		width: 23.5%;
+	}
+	.grid-4 {
+		width: 32%;
+	}
+	.grid-5 {
+		width: 40.5%;
+	}
+	.grid-6 {
+		width: 49%;
+	}
+	.grid-7 {
+		width: 57.5%;
+	}
+	.grid-8 {
+		width: 66%;
+	}
+	.grid-9 {
+		width: 74.5%;
+	}
+	.grid-10 {
+		width: 83%;
+	}
+	.grid-11 {
+		width: 91.5%;
+	}
+	.grid-12 {
+		width: 100%;
+	}
+
+	/* Clearfix
+	================================ */
+
+	.grid-container:after,
+	.group:after {
+	  content: " ";
+	  display: table;
+	  clear: both;
+	}
+}
+
+
+
+	/* Typography
+================================ */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a:link {
+  text-decoration: none;
+  color: #777;
+}
+li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 .5em;
+}
+h1 {
+  text-transform: uppercase;
+}
+h2 {
+  font-weight: 400;
+}
+article {
+  background: #eee;
+}
+p {
+  font-weight: 300;
+}
+p:first-line {
+  font-weight: 400;
+}
+p:only-of-type {
+  font-size: 1.2em;
+}
+/* add type styles here */
+
+
+	/* Colors
+================================ */
+
+/* add colors here */
+
+
+/* Advanced Styling
+================================ */
+
+/* add advanced selector, psuedo-class, and psuedo-element stylling here */
+
+a[href^="mailto"]:before {
+  content: '✉';
+  padding-right: .25em;
+}
+a[href^="tel"]:before {
+  content: '☮';
+  padding-right: .25em;
+}
+a[href^="http"]:before {
+  content: '☼';
+  padding-right: .25em;
+}
